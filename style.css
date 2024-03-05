@@ -131,7 +131,39 @@ nav {
 }
 
 .cat_banner {
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  margin-top: 80px;
   width: 70%;
   height: 1000px;
+}
+.cat_banner h1 {
+  text-align: center;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 20px 0px;
+  border-bottom: 2px solid whitesmoke;
+}
+.cat_pics {
+  width: 100%;
+  /* border: 2px solid white; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+img {
+  width: 450px;
+  height: 450px;
+  padding: 30px;
+  align-items: center;
+  /* border: 2px solid white; */
+  margin: 20px 0px;
+  transition: 0.3s;
+}
+img:hover {
+  width: 450px;
+  height: 450px;
+  padding: 0px;
 }
