@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #111215;
+  color: #f2f7fc;
+}
+.main {
+  display: grid;
+  justify-items: center;
+}
+.navbar {
+  width: 70%;
+  height: 100px;
+  display: grid;
+  border: 2px solid white;
+}
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.items {
+  display: grid;
+  justify-content: end;
+}
+.items ul {
+  display: flex;
+  justify-content: center;
+}
+.items ul li {
+  margin: 20px 30px;
+  list-style-type: none;
+}
+.items ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  transition: 0.3s;
+}
+.items ul li a:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+.banner {
+  width: 70%;
+  height: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.banner .banner_txt {
+  font-size: 65px;
+  border: 2px solid white;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-left: 100px;
+  padding: 50px;
+  transition: 0.2s;
+}
+.banner .banner_txt:hover {
+  padding-right: 40px;
+  margin-bottom: 10px;
+  box-shadow: inset 10px -15px 0px white;
+}
+.banner .banner_txt p {
+  text-align: end;
+}
+
+.banner .banner_txt span {
+  font-size: 55px;
+  line-height: 150px;
+  padding: 0px 10px;
+  box-shadow: inset 0px -2px 0px white;
+  transition: transform 0.5s ease-in;
+  cursor: pointer;
+}
+.banner .banner_txt:hover span {
+  animation: border_anim 0.3s ease-in forwards;
+}
+@keyframes border_anim {
+  0% {
+    box-shadow: inset 0px -5px 0px white;
+  }
+  20% {
+    box-shadow: inset 0px -15px 0px white;
+  }
+  40% {
+    box-shadow: inset 0px -25px 0px white;
+  }
+  60% {
+    box-shadow: inset 0px -35px 0px white;
+  }
+  80% {
+    box-shadow: inset 0px -45px 0px white;
+  }
+  100% {
+    box-shadow: inset 0px -60px 0px white;
+    color: #111215;
+  }
+}
+
+.banner .banner_txt .sm_txt {
+  font-size: 24px;
+  align-items: end;
+  width: 450px;
+}
+.banner .img {
+  border: 2px solid white;
+}
+.img {
+}
